@@ -1,0 +1,144 @@
+/******************** Font-Sans *******************/
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.work-sans-font {
+  font-family: "Work Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+/*************Header-Part*******************/
+
+body{
+    background-color: rgb(240, 238, 238);
+}
+
+/*********************** Navigation-part **********************/
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.school-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+}
+.figure-title{
+    font-weight: 700;
+    font-size: 32px;
+}
+.nav-bar{
+    display: flex;
+}
+.nav-bar li> a {
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: 500;
+    font-size: 20px;
+}
+.nav-bar >li {
+    list-style: none;
+}
+.contact > a{
+     text-decoration: none;
+     color: whitesmoke;
+}
+.contact{
+    background-color: #FEA301;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 300;
+    font-size: 20px;
+}
+.orange-text{
+    color: #FEA301;
+}
+.skyblue-text{
+    color: #01ACFD;
+}
+.purple-text{
+    color: #5D58EF;
+}
+.menu-icon {
+    display: none;
+    font-size: 30px;
+}
+
+/*************** Banner-Part **************/
+.banner{
+    display: flex;
+    width: 1300px;
+    height: 400px;
+    align-items: center;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 600px;
+    height: 390px;
+    padding-top: 170px;
+    padding-left: 20px;
+}
+.title-head{
+    font-weight: 700;
+    font-size: 28px;
+}
+.banner-img > img{
+    width: 350px;
+    height: 420px;
+}
+.banner-text > p {
+    font-size: 14px;
+    font-weight: 400;
+}
+.banner-text > button{
+    background-color: black;
+    color: whitesmoke;
+    margin-top: 10px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+/*********************** Header-Responsive-Part *********************/
+@media screen and (max-width: 576px) {
+    body{
+        background-color: white;
+    }
+    .figure-title{
+        display: none;
+    }
+    .nav{
+        display: flex;
+        flex-wrap: wrap;
+        border-bottom: 1px solid red;
+        padding: 10px;
+    }
+    .banner{
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    .banner{
+        height: auto;
+        width: auto;
+    }
+    .title{
+        padding: 5px; 
+        text-align: center;  
+    }
+    .nav-links {
+        display: none; 
+    }
+    .menu-icon {
+        display: block;
+    }
+}
+
+
+
+
+
