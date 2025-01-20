@@ -137,8 +137,54 @@ body{
         display: block;
     }
 }
+/***************** Standard-Curriculum-Part ******************/
+.container-1{
+    background-image: url(../assets/bg.png);
+    display: flex;
+    flex-direction: column;
+    margin: 70px auto;
+}
+.container-1> h2{
+    font-weight: 700;
+    font-size: 40px;
+    margin: 60px auto;
+}
+.cards{
+    display: flex;
+    gap: 40px;
+}
+.card{
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      border: .5px solid skyblue;
+      border-radius: 10px;
+      margin: 30px 0px;
+      padding: 20px;
+      width: 280px;
+      height: 320px;
+      background-image:linear-gradient(skyblue,white,white,whitesmoke) ;
+}
+.card-title>h3{
+    font-weight: 700;
+    font-size: 20px;
+}
+.card-text > p {
+    color: #808080;
+    font-size: 15px;
+}
+.btn>a{
+    text-decoration: none;
+}
 
-
-
-
-
+#card-2{
+    background-image:linear-gradient(#fcca75,white,white,whitesmoke) ;
+    border: .5px solid #fcca75;
+}
+#card-3{
+    background-image:linear-gradient(#a5a3eb,white,white,whitesmoke) ;
+    border: .5px solid #a5a3eb;
+}
