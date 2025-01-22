@@ -104,46 +104,9 @@ body{
     font-size: 16px;
 }
 
-/*********************** Header-Responsive-Part *********************/
-@media screen and (max-width: 576px) {
-    
-    body{
-        background-color: white;
-    }
-    .figure-title{
-        display: none;
-    }
-    .banner{
-        padding:60px;
-        width: 100%;
-    }
-    .nav{
-        display: flex;
-        justify-content: space-between;
-        padding: 20px;
-        width: 100%;
-        border: 1px solid red;
-    }
-    .banner{
-        display: flex;
-        flex-wrap: wrap-reverse;
-    }
-    .banner{
-        height: auto;
-        width: auto;
-    }
-    .title{
-        padding: 5px; 
-        text-align: center;  
-    }
-    .nav-links {
-        display: none; 
-    }
-    .menu-icon {
-        display: block;
-    }
-}
+
 /***************** Standard-Curriculum-Part ******************/
+
 .curriculum{
     background-image: url(../assets/bg.png);
     display: flex;
@@ -213,32 +176,6 @@ body{
 .button:hover {
     transform: scale(1.1); 
 }
-
-/********************** Standard Curriculum - Responsive *************/
-
-@media screen and (max-width: 576px) {
-    .curriculum {
-        padding: 0 10px; 
-    }
-    .curriculum > h2{
-        padding: 20px;
-    }
-    .cards {
-        display: flex;
-        flex-direction: column; 
-        gap: 15px; 
-    }
-
-    .card {
-        width:  95%;
-        height: auto; 
-    }
-
-    .arrow-btn {
-        display: none; 
-    }
-}
-
 
 
     /************************** Our Stories ************************/
@@ -339,35 +276,7 @@ body{
     margin-bottom:50px ;
 }
 
-/************************** Our Stories - Responsive ************************/
-@media screen and (max-width: 576px) {
-    .stories {
-        padding: 20px;
-    }
 
-    .boxes {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
-        padding: 10px 0px;
-        margin: 30px 0px;
-    }
-
-    .box-1 {
-        display: none;
-    }
-
-    .box {
-        width: 100%;
-        height: auto;
-        margin: 5px auto;
-    }
-    .view-btn{
-        width: 160px;
-        text-align: center;
-        margin-left: 150px;
-    }
-}
 
 /********************Footer-Part *******************/
 
@@ -422,9 +331,110 @@ body{
     margin:20px 50px 0px 0px;
 } 
 
+/*********************************** Media-Query ************************************/
 
-/*******************Responsive footer **********************/
 @media screen and (max-width: 576px) {
+    
+    /********************************* body-style ********************************/
+    body{
+        background-color: white;
+    }
+
+    /*********************** Header-Responsive-Part *********************/
+
+
+    /****************************** Nav-style ***********************/
+    .figure-title{
+        display: none;
+    }
+    
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        width: 100%;
+        border: 1px solid red;
+    }
+
+    .nav-links {
+        display: none; 
+    }
+    .menu-icon {
+        display: block;
+    }
+
+    /**************************** Banner-style ************************/
+    .banner{
+        padding:60px;
+        width: 100%;
+    }
+    .banner{
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    .banner{
+        height: auto;
+        width: auto;
+    }
+    .title{
+        padding: 5px; 
+        text-align: center;  
+    }
+
+    /********************** Standard-Curriculum - Responsive *************/
+
+    .curriculum {
+        padding: 0 10px; 
+    }
+    .curriculum > h2{
+        padding: 20px;
+    }
+    .cards {
+        display: flex;
+        flex-direction: column; 
+        gap: 15px; 
+    }
+
+    .card {
+        width:  95%;
+        height: auto; 
+    }
+
+    .arrow-btn {
+        display: none; 
+    }
+    
+
+    /************************** Our-Stories-Responsive ************************/
+
+    .stories {
+        padding: 20px;
+    }
+
+    .boxes {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        padding: 10px 0px;
+        margin: 30px 0px;
+    }
+
+    .box-1 {
+        display: none;
+    }
+
+    .box {
+        width: 100%;
+        height: auto;
+        margin: 5px auto;
+    }
+    .view-btn{
+        width: 160px;
+        text-align: center;
+        margin-left: 150px;
+    }
+
+    /*******************Responsive footer **********************/
     .footer{
         display: flex;
         flex-direction: column;
@@ -434,4 +444,7 @@ body{
     .social-media-links{
         padding-left: 120px;
     }
+
+
 }
+
